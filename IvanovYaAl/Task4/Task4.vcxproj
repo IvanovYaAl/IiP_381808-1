@@ -146,10 +146,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Shagomer.cpp" />
+    <ClCompile Include="Pedometer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Shagomer.h" />
+    <ClInclude Include="Pedometer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
