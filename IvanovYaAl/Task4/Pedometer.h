@@ -1,5 +1,8 @@
 #include <iostream>
+<<<<<<< HEAD
 #include <fstream>
+=======
+>>>>>>> aad5dec04b3d2013dff0b2df3b177fb999bf36dd
 
 using namespace std;
 
@@ -24,6 +27,7 @@ private:
 public:
 	Pedometer(int _year, int _month, int _day, int _hour_start, int _minute_start, int _max_size);
 	~Pedometer();
+<<<<<<< HEAD
 	void addNewPed(int _year, int _month, int _day, int _hour_first, int _hour_second, int _minute_first, int _minute_second, int _steps);
 	void startDate();
 	int HowManyStepsOnThisDay(int _year, int _month, int _day);
@@ -38,3 +42,8 @@ public:
 
 ostream& operator << (ostream & stream, const Pedometer &c);
 istream& operator >> (istream & stream, Pedometer &c);
+=======
+	void addNew(int _year, int _month, int _day, int _hour_first, int _hour_second, int _minute_first, int _minute_second, int  _max_size);
+
+};
+>>>>>>> aad5dec04b3d2013dff0b2df3b177fb999bf36dd

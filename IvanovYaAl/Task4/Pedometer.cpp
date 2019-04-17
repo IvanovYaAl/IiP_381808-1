@@ -1,13 +1,24 @@
+<<<<<<< HEAD
 #include "Pedometer.h"
 
 Pedometer::Pedometer(int _year, int _month, int _day, int _hour_start, int _minute_start, int _max_size) {
+=======
+#include "Pedometer.h";
+
+Pedometer::Pedometer(int _year, int _month, int _day, int _hour_first, int _minute_first, int _max_size) {
+>>>>>>> aad5dec04b3d2013dff0b2df3b177fb999bf36dd
 	current = 0;
 	max_size = _max_size;
 	start_year = _year;
 	start_month = _month;
 	start_day = _day;
+<<<<<<< HEAD
 	start_hour = _hour_start;
 	start_minute = _minute_start;
+=======
+	start_hour = _hour_first;
+	start_minute = _minute_first;
+>>>>>>> aad5dec04b3d2013dff0b2df3b177fb999bf36dd
 	year = new int[max_size];
 	month = new int[max_size];
 	day = new int[max_size];
@@ -24,17 +35,28 @@ Pedometer::~Pedometer() {
 	start_month = 0;
 	start_day = 0;
 	start_hour = 0;
+<<<<<<< HEAD
 	start_minute = 0;
 	delete[] year;
 	delete[] month;
 	delete[] day;
+=======
+	start_minute = 0 ;
+	delete[] year;
+	delete[] month ;
+	delete[] day ;
+>>>>>>> aad5dec04b3d2013dff0b2df3b177fb999bf36dd
 	delete[] hour_first;
 	delete[] hour_second;
 	delete[] minute_first;
 	delete[] minute_second;
 	delete[] steps;
 }
+<<<<<<< HEAD
 void Pedometer::addNewPed(int _year, int _month, int _day, int _hour_first, int _hour_second, int _minute_first, int _minute_second, int _steps) {
+=======
+void Pedometer::addNew(int _year, int _month, int _day, int _hour_first, int _hour_second, int _minute_first, int _minute_second, int  _max_size) {
+>>>>>>> aad5dec04b3d2013dff0b2df3b177fb999bf36dd
 	if (current < max_size) {
 		year[current] = _year;
 		month[current] = _month;
@@ -43,6 +65,7 @@ void Pedometer::addNewPed(int _year, int _month, int _day, int _hour_first, int 
 		hour_second[current] = _hour_second;
 		minute_first[current] = _minute_first;
 		minute_second[current] = _minute_second;
+<<<<<<< HEAD
 		steps[current] = _steps;
 		current++;
 	}
@@ -219,4 +242,10 @@ istream& operator>>(istream& stream, Pedometer& c) {
 		stream >> c.steps[i] ;
 	}
 	return stream;
+=======
+	}
+	else {
+
+	}
+>>>>>>> aad5dec04b3d2013dff0b2df3b177fb999bf36dd
 }

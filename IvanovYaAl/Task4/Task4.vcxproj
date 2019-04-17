@@ -146,11 +146,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <ClCompile Include="Pedometer.cpp" />
     <ClCompile Include="PedometerTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Pedometer.h" />
+=======
+<<<<<<< HEAD
+    <ClCompile Include="Pedometer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Pedometer.h" />
+=======
+    <ClCompile Include="Shagomer.cpp" />
+>>>>>>> 0e639c6401dd7ece782026bd65330ce3e1ed07c2
+>>>>>>> aad5dec04b3d2013dff0b2df3b177fb999bf36dd
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
