@@ -1,11 +1,13 @@
 #include "Pedometer.h"
 
 int main() {
-	int Year, Month, Day, Hour_First, Hour_Second, Minute_First, Minute_Second, Steps;
+	int Year, Month, Day, Hour_First, Hour_Second, Minute_First, Minute_Second, Steps, Delta;
 	cout << "Enter the start date and time of observation: " << endl;
 	cin >> Year >> Month >> Day >> Hour_First >> Minute_First;
-	Pedometer Begining(Year, Month, Day, Hour_First, Minute_First, 25);
-	Pedometer Ending(2000, 3, 1, 12, 30, 25);
+	cout << "Enter the Delta ( cout of improve the mas): " << endl;
+	cin >> Delta;
+	Pedometer Begining(Year, Month, Day, Hour_First, Minute_First, 25, Delta);
+	Pedometer Ending(2000, 3, 1, 12, 30, 25, 10);
 
 	bool Menu = true;
 	while (Menu) {
